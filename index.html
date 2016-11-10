@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz rejestracyjny</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+    <h2>Formularz rejestracyjny</h2>
+    <form id="formularz" action="index.xhtml" method="get">
+        <div>
+            <div class="blad" id="bladImie"></div>
+            <label for="imie" class="etykieta">Imię: </label>
+            <input type="text" name="imie" id="imie" class="input"/>
+        </div>
+        <div>
+            <div class="blad" id="bladNazwisko"></div>
+            <label for="nazwisko" class="etykieta">Nazwisko: </label>
+            <input type="text" name="nazwisko" id="nazwisko" class="input"/>
+        </div>
+        <div>
+            <div class="blad" id="bladPlec"></div>
+            <div id="plec">
+                <label for="wybierz" class="etykieta">Wybierz płeć: </label>
+                <input type="radio" name="plec" class="input" id="mezczyzna" value="mezczyzna"/>
+                <label for="mezczyzna">Mężczyzna</label>
+                <input type="radio" name="plec" class="input" id="kobieta" value="kobieta"/>
+                <label for="kobieta">Kobieta</label>
+            </div>
+        </div>
+        <div>
+            <div class="blad" id="bladAdres"></div>
+            <label for="adres" class="etykieta">Adres: </label>
+            <input type="text" name="adres" id="adres" class="input"/>
+        </div>
+        <div>
+            <div class="blad" id="bladTelefon"></div>
+            <label for="telefon" class="etykieta">Numer telefonu: </label>
+            <input type="text" name="telefon" id="telefon" class="input"/>
+        </div>
+        <div>
+            <div class="blad" id="bladWojewodztwa"></div>
+            <label for="wojewodztwa" class="etykieta">Wybierz województwo:</label>
+            <select name="wojewodztwa" class="input" id="wojewodztwa">
+                <option value=""></option>
+                <option value="Mazowieckie">Mazowieckie</option>
+                <option value="Podlaskie">Podlaskie</option>
+                <option value="Pomorskie">Pomorskie</option>
+                <option value="Lubelskie">Lubelskie</option>
+                <option value="Małopolskie">Małopolskie</option>
+            </select>
+        </div>
+        <div>
+            <div class="blad" id="bladOmnie"></div>
+            <label for="omnie" class="etykieta">O mnie:</label>
+            <textarea id="omnie" class="input" rows="10" cols="50"></textarea> 
+        </div>
+
+
+        <input type="submit" name="wyślij" id="wyslij" class="input" value="Wyślij formularz"/>
+        <input type="reset" name="usuń" id="usun" class="input" value="Usuń dane"/>
+
+    </form>
+
+</div>
+
+
+</body>
+</html>

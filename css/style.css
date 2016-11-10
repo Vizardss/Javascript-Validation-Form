@@ -1,0 +1,60 @@
+body {
+    background: #ccc;
+}
+
+#wrapper {
+    width: 500px;
+    background: #fff;
+    margin: auto;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    margin: 40px;
+}
+
+.input {
+    margin: 10px 0;
+    border: 1px solid #000;
+}
+
+.etykieta {
+    font-weight: bold;
+}
+
+#wyslij, #usun {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#usun:hover {
+    cursor: pointer;
+    background: #ccc;
+    color: #d80707;
+}
+
+#wyslij:hover {
+    cursor: pointer;
+    background: #ccc;
+}
+
+div .blad {
+    font-size: 12px;
+    color: #ed0d0d;
+}
+
+label, #plec.etykieta {
+    display: block;
+}
+
+#plec label {
+    display: inline-block;
+}
